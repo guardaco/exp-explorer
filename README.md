@@ -1,16 +1,16 @@
-# ETC Explorer
+# EXP Explorer
 
-<img src="public/img/explorer-logo.png" alt="ETC Explorer logo" height="200" />
+<img src="public/img/explorer-logo.png" alt="EXP Explorer logo" height="200" />
 
-<b>Live Version: [etherhub.io](http://etherhub.io)</b>
+<b>Live Version: [etherhub.io](http://expexplorer.guarda.co)</b>
 
-Follow the project progress at: [ETC Block Explorer Development](https://github.com/ethereumclassic/explorer)
+Follow the project progress at: [EXP Block Explorer Development](https://github.com/guardaco/exp-explorer)
 
 ## Local installation
 
 Clone the repo
 
-`git clone https://github.com/ethereumclassic/explorer`
+`git clone https://github.com/guardaco/exp-explorer`
 
 Download [Nodejs and npm](https://docs.npmjs.com/getting-started/installing-node "Nodejs install") if you don't have them
 
@@ -26,7 +26,7 @@ Ubuntu: `sudo apt-get install -y mongodb-org`
 
 ## Populate the DB
 
-This will fetch and parse the entire blockchain.
+This will fEXPh and parse the entire blockchain.
 
 Setup your configuration file: `cp config.example.json config.json`
 
@@ -45,9 +45,9 @@ Basic settings:
     "patchBlocks":  100,
     "bulkSize":     100,
     "settings": {
-        "symbol": "ETC",
-        "name": "Ethereum Classic",
-        "title": "Ethereum Classic Block Explorer",
+        "symbol": "EXP",
+        "name": "Expanse",
+        "title": "Expanse Block Explorer",
         "author": "Elaine",
         "rss": "https://ethereumclassic.org",
         "reddit": "https://www.reddit.com/r/EthereumClassic",
@@ -55,10 +55,10 @@ Basic settings:
         "linkedin": "https://www.linkedin.com/company/ethereum-classic",
         "github": "https://github.com/ethereumclassic",
         "logo": "/img/explorer-logo.png",
-        "copyright": "2019 &copy; Ethereum Classic.",
+        "copyright": "2019 &copy; Expanse.",
         "poweredbyCustom": false,
-        "poweredbyEtcImage": "/img/powered-by-etcexplorer-w.png",
-        "poweredbyEtc": true,
+        "poweredbyEXPImage": "/img/powered-by-EXPexplorer-w.png",
+        "poweredbyEXP": true,
         "useRichList": true,
         "useFiat": true,
         "miners": {
@@ -69,7 +69,7 @@ Basic settings:
             "0x4750e296949b747df1585aa67beee8be903dd560": "UUPool",
             "0xef224fa5fad302b51f38898f4df499d7af127af0": "91pool",
             "0x0073Cf1B9230cF3EE8Cab1971B8DbeF21eA7B595": "2miners",
-            "0x4c2b4e716883a2c3f6b980b70b577e54b9441060": "ETCPool PL",
+            "0x4c2b4e716883a2c3f6b980b70b577e54b9441060": "EXPPool PL",
             "0xd144e30a0571aaf0d0c050070ac435deba461fab": "Clona Network",
             "0x568f58bf1667504fdf5aa02d776c156f940178a5": "Whalesburg",
             "0x3b2d2613ad66d66ee0cb518aeeccc98e9e3b19c0": "private(0x3b2d2613)",
@@ -98,7 +98,7 @@ Basic settings:
 |-------------|-----|
 | `nodeAddr` | Your node API RPC address. |
 | `wsPort` | Your node API WS (Websocket) port. (RPC HTTP port is deprecated on Web3 1.0 see https://web3js.readthedocs.io/en/1.0/web3.html#value) |
-| `startBlock` | This is the start block of the blockchain, should always be 0 if you want to sync the whole ETC blockchain. |
+| `startBlock` | This is the start block of the blockchain, should always be 0 if you want to sync the whole EXP blockchain. |
 | `endBlock` | This is usually the 'latest'/'newest' block in the blockchain, this value gets updated automatically, and will be used to patch missing blocks if the whole app goes down. |
 | `quiet` | Suppress some messages. (admittedly still not quiet) |
 | `syncAll` | If this is set to true at the start of the app, the sync will start syncing all blocks from lastSync, and if lastSync is 0 it will start from whatever the endBlock or latest block in the blockchain is. |
@@ -135,7 +135,7 @@ $ > quit()
 ```
 
 Above dbuser explorer will full access explorerDB and clustor setting will be well used on monitoring the multiple sharding and replication of multiple mongodb instances.
-Enable database authorization in the MongoDB configuration file /etc/mongodb.conf by appending the following lines:
+Enable database authorization in the MongoDB configuration file /EXP/mongodb.conf by appending the following lines:
 
 ```
 auth=true
